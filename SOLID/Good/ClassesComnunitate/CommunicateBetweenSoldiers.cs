@@ -8,8 +8,8 @@ namespace SOLID.Good.Interfaces
 {
     public class CommunicateBetweenSoldiers : ITypeCommunicator
     {
-        public void Communicate(ISoldier s1, ISoldier s2) {
-            Console.WriteLine($"Here {s1.GetPersonalData().Name}, Soldier {s2.GetPersonalData().Name} I need your positon, copy");
+        public void Communicate(ISoldier soldier1, ISoldier soldier2) {
+            Console.WriteLine($"Here {soldier1.GetPersonalData().Name}, Soldier {soldier2.GetPersonalData().Name} I need your positon, copy");
         }
     }
 }
